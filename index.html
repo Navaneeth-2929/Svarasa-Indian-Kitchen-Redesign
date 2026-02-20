@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svarasa Indian Kitchen · Authentic Flavors, Made with Truth</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">Svarasa</span>
+                <span class="logo-suffix">Indian Kitchen</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#offerings">Offerings</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="btn btn-outline">Reserve</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Logo + Simple Introduction -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <h1 class="hero-title">Svarasa</h1>
+                    <p class="hero-subtitle">Indian Kitchen</p>
+                </div>
+                <p class="hero-tagline">Authentic Indian Flavors,<br>Made with Truth.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Explore Menu</button>
+                    <button class="btn btn-outline-dark">Reserve Table</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="images/hero-spices.jpg" 
+                         alt="Indian spices and ingredients" 
+                         class="hero-img">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sliding Offerings Cards -->
+    <section id="offerings" class="offerings">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="accent">Offerings</span></h2>
+                <p class="section-subtitle">Experiences crafted with passion and tradition</p>
+            </div>
+            
+            <div class="cards-slider-container">
+                <button class="slider-btn prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="cards-wrapper" id="cardsWrapper">
+                    <div class="cards-slider" id="cardsSlider">
+                        <!-- Card 1: Dine-In Experience -->
+                        <div class="offering-card">
+                            <div class="card-image">
+                                <img src="images/dine-in.jpg" 
+                                     alt="Dine-in experience">
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Dine-In Experience</h3>
+                                <p>Authentic ambiance, warm hospitality, and flavors that transport you to the heart of India.</p>
+                                <a href="#" class="card-link">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2: Catering & Events -->
+                        <div class="offering-card">
+                            <div class="card-image">
+                                <img src="images/catering.jpg" alt="Catering and events">
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Catering & Events</h3>
+                                <p>Bring the taste of Svarasa to your celebrations. Custom menus for every occasion.</p>
+                                <a href="#" class="card-link">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 3: Online Ordering -->
+                        <div class="offering-card">
+                            <div class="card-image">
+                               <img src="images/online-order.jpg" alt="Online ordering">
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Online Ordering</h3>
+                                <p>Enjoy our soulful cuisine at home. Fresh, carefully packed, and delivered with care.</p>
+                                <a href="#" class="card-link">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 4: Private Dining -->
+                        <div class="offering-card">
+                            <div class="card-image">
+                                <img src="images/private-dining.jpg" alt="Private dining">
+
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Private Dining</h3>
+                                <p>Intimate gatherings, special celebrations. Our private space awaits you.</p>
+                                <a href="#" class="card-link">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 5: Cooking Classes -->
+                        <div class="offering-card">
+                            <div class="card-image">
+                                <img src="images/cooking-class.jpg" alt="Cooking classes">
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Cooking Classes</h3>
+                                <p>Learn the secrets of Indian spices and traditional recipes from our chefs.</p>
+                                <a href="#" class="card-link">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 6: Weekly Specials -->
+                        <div class="offering-card">
+                            <div class="card-image">
+                                <img src="images/weekly-specials.jpg" alt="Weekly specials">
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Weekly Specials</h3>
+                                <p>Regional Indian delicacies, seasonal creations, and chef's specials.</p>
+                                <a href="#" class="card-link">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="slider-btn next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section - "Taste Begins with Truth" -->
+    <section id="story" class="story">
+        <div class="container story-container">
+            <div class="story-image">
+                <img src="images/story-spices.jpg" 
+                     alt="Indian spices and ingredients" 
+                     class="story-img">
+                <div class="story-image-badge">
+                    <i class="fas fa-leaf"></i> Pure · Honest · Traditional
+                </div>
+            </div>
+            <div class="story-content">
+                <div class="story-tagline">At Svarasa, taste begins with truth</div>
+                <h2 class="story-title">Our <span class="accent">Philosophy</span></h2>
+                
+                <div class="story-quote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Born from a love for authentic Indian flavors and honest cooking, Svarasa isn't just a restaurant—it's a celebration of purity, passion, and people.</p>
+                </div>
+                
+                <p class="story-text">
+                    Every dish we serve is crafted with handpicked ingredients, sourced responsibly, and prepared with the same care as a home-cooked meal. We don't cut corners. No shortcuts, no compromises—only time-honored recipes, rich spices, and the best produce that nature offers.
+                </p>
+                
+                <p class="story-text emphasis">
+                    From the farm to your plate, we respect every step of the journey. Because for us, flavor isn't just in the food—it's in the intention behind it.
+                </p>
+                
+                <div class="story-signature">
+                    <span>— The Svarasa Promise</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation & Contact Section -->
+    <section id="reservations" class="reservations">
+        <div class="container">
+            <div class="reservation-grid">
+                <!-- Left Side: Reservation Card -->
+                <div class="reservation-card">
+                    <div class="card-accent"></div>
+                    <h2 class="reservation-title">Make a <span class="accent">Reservation</span></h2>
+                    <p class="reservation-subtitle">Join us for an unforgettable culinary journey</p>
+                    
+                    <form class="reservation-form" id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Guests</label>
+                                <select id="guests">
+                                    <option>1 Person</option>
+                                    <option>2 People</option>
+                                    <option>3 People</option>
+                                    <option>4 People</option>
+                                    <option>5+ People</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="requests">Special Requests?</label>
+                            <textarea id="requests" rows="3" placeholder="Dietary concerns, occasion, etc."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Book Now</button>
+                    </form>
+                    
+                    <div class="whatsapp-cta">
+                        <p>Prefer WhatsApp?</p>
+                        <a href="#" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Message Us
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Hours & Location -->
+                <div class="info-card">
+                    <h3 class="info-title">Visit <span class="accent">Us</span></h3>
+                    
+                    <div class="info-block">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Ground & Mezzanine Floor, Municipal No 35/1-1<br>
+                            Cunningham Halmark, Cunningham Road<br>
+                            Vasanth Nagar, Bengaluru, KA 560052</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-block">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div class="info-content">
+                            <h4>Hours</h4>
+                            <p><strong>Open today:</strong> 11:00 am – 11:00 pm</p>
+                            <p>Monday - Sunday: 11am - 11pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-block">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info-content">
+                            <h4>Contact</h4>
+                            <p>+91 80 1234 5678</p>
+                            <p>hello@svarasakitchen.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="map-preview">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.985647852582!2d77.6035!3d12.9872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1673e7d0672f%3A0xc62c3b4b3b3b3b3b!2sCunningham%20Road%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1645567890123!5m2!1sen!2sin" 
+        width="100%" 
+        height="200" 
+        style="border:0; border-radius: 12px;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">Svarasa<span>Indian Kitchen</span></div>
+                    <p class="footer-tagline">Authentic Indian Flavors, Made with Truth.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#offerings">Offerings</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#reservations">Reservations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Stay Connected</h4>
+                    <p>Subscribe to our newsletter for updates and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Svarasa Indian Kitchen. All rights reserved. Powered by authenticity & love.</p>
+                <p class="cookies-notice">This website uses cookies to enhance your experience.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
